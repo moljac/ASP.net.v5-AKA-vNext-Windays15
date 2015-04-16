@@ -26,6 +26,7 @@ ASP.net.v5-AKA-vNext-Windays15
 		
 	
 runtime
+
 	*	mono
 	*	CoreCLR		(near/far future)
 	
@@ -38,6 +39,22 @@ runtime
 			*	CoreCLR		
 				future (near/far)
 			*	mono >= 3.4.1
+
+			
+dnx
+The DNX (a .NET Execution Environment) contains the code required to bootstrap 
+and run an application, including the compilation system, SDK tools, and the 
+native CLR hosts.			
+
+dnvm
+
+The .NET SDK Manager, a set of command line utilities to update and configure 
+which runtime (KRE) to use.
+
+
+%USERPROFILE%\.kre
+
+
 
 
 	*	omnisharp		
