@@ -1,0 +1,15 @@
+[submodule "websites/Home"]
+	path = websites/Home
+	url = https://github.com/aspnet/Home.git
+[submodule "servers"]
+	path = servers
+	url = https://github.com/moljac/ASP.net.v5.vNext.Servers.git
+[submodule "websites/MusicStore"]
+	path = websites/MusicStore
+	url = https://github.com/aspnet/MusicStore.git
+[submodule "websites/BugTracker"]
+	path = websites/BugTracker
+	url = https://github.com/aspnet/BugTracker.git
+[submodule "websites/beginor-mvc-vNext"]
+	path = websites/beginor-mvc-vNext
+	url = https://github.com/beginor/mvc-vnext.git
