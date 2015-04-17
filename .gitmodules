@@ -13,3 +13,6 @@
 [submodule "websites/beginor-mvc-vNext"]
 	path = websites/beginor-mvc-vNext
 	url = https://github.com/beginor/mvc-vnext.git
+[submodule "OmniSharp/OmniSharp-Server"]
+	path = OmniSharp/OmniSharp-Server
+	url = https://github.com/OmniSharp/omnisharp-server.git
