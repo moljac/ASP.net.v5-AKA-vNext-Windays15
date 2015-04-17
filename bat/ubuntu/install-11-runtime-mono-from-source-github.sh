@@ -23,6 +23,7 @@ sudo apt-get -y install \
 
 
 
+rm -fr ./mono/
 	
 #=======================================================================================
 # In order to use mcs and mono binaries during the build process which do not 
@@ -50,12 +51,15 @@ cd mono
 # If you do not currently have mono installed, build and install mono from a 
 # recently released tarball or run:
 # ./autogen.sh must be run prior to this
+./mono/mini/mono -V
 make get-monolite-latest
-
+./mono/mini/mono -V
 
 #-----------------------------------------------------------
 # build mono
 make
+
+./runtime/_tmpinst/bin/mono -V
 
 # installation through packages
 # make install	

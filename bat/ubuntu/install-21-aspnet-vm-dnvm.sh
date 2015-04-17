@@ -1,31 +1,28 @@
 #!/bin/bash
 
+# ASP.net Version Manager
+#	optimistic
+#	dnvm
+curl \
+    -sSL \
+    https://raw.githubusercontent.com/aspnet/Home/dev/dnvminstall.sh \
+    | \
+        DNX_BRANCH=dev sh \
+        && \
+        source ~/.dnx/dnvm/dnvm.sh		
 
-# sudo apt-get -y install \
-#	git \
-#	autoconf libtool automake \
-#	gettext \
-#	build-essential \
-#	mono-devel \
-		
-sudo apt-get -y install \
-	autoconf libtool automake \
-	gettext \
-	mono-devel \
-		
-		
-sudo apt-get -y install \
-	git \
-	autoconf libtool automake \
-	gettext \
-	build-essential \
-	mono-devel \
-		
-	
-git clone https://github.com/mono/mono.git
-cd mono
-./autogen.sh --prefix=$PREFIX
-make
+ls -al $HOME/
 
-# installation through packages
-# make install	
+# $HOME/.k/kvm/kvm.sh
+# bash: /home/moljac/.k/kvm/kvm.sh: Permission denied
+chmod 766 $HOME/.k/kvm/kvm.sh
+$HOME/.k/kvm/kvm.sh
+$HOME/.k/kvm/kvm.sh
+
+kvm list
+
+../install-23-as[net-execution-environment.sh
+
+
+
+
