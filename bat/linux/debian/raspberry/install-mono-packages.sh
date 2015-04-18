@@ -1,5 +1,4 @@
-
-
+#!/bin/bash
 
 sudo apt-get -y \
 	update
@@ -12,4 +11,4 @@ sudo apt-get -y \
 
 mono -V
 	
-mozroots --import --ask-remove --machine
+../../install-mono-niget-certificates.sh
