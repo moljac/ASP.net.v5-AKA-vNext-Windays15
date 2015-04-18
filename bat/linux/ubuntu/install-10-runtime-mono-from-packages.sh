@@ -21,8 +21,10 @@ sudo apt-get -y install \
 # use this new ppa:
 
 sudo add-apt-repository ppa:ermshiperete/monodevelop
-sudo apt-get update
-sudo apt-get -y install \
+sudo apt-get -y\
+	update
+sudo apt-get -y \
+	install \
 	monodevelop-current
 
 mono -V

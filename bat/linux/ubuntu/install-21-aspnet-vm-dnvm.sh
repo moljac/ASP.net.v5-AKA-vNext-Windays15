@@ -21,7 +21,7 @@ $HOME/.k/kvm/kvm.sh
 
 kvm list
 
-../install-23-as[net-execution-environment.sh
+../install-23-aspnet-execution-environment.sh
 
 
 
