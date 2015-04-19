@@ -11,3 +11,6 @@ DATA_FOLDER=$HOME/data
 mkdir $DATA_FOLDER
 
 sudo mount $DATA_PARTITION $DATA_FOLDER
+
+mount
+
