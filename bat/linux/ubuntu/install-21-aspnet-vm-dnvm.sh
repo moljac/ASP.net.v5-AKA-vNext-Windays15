@@ -9,17 +9,15 @@ curl \
     | \
         DNX_BRANCH=dev sh \
         && \
-        source ~/.dnx/dnvm/dnvm.sh		
+        source ~/.dnx/dnvm/dnvm.sh
 
 ls -al $HOME/
 
-# $HOME/.k/kvm/kvm.sh
-# bash: /home/moljac/.k/kvm/kvm.sh: Permission denied
-chmod 766 $HOME/.k/kvm/kvm.sh
-$HOME/.k/kvm/kvm.sh
-$HOME/.k/kvm/kvm.sh
+chmod 770 .dnx/dnvm/dnvm.sh
+.dnx/dnvm/dnvm.sh
 
-kvm list
+dnvm upgrade
+dnvm list
 
 ../install-23-aspnet-execution-environment.sh
 

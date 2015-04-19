@@ -1,0 +1,14 @@
+{
+  "locked": false,
+  "version": -9998,
+  "projectFileDependencyGroups": {
+    "": [
+      "Microsoft.AspNet.Diagnostics ",
+      "Microsoft.AspNet.Hosting ",
+      "Microsoft.AspNet.Server.WebListener ",
+      "Microsoft.AspNet.StaticFiles ",
+      "Nowin.vNext "
+    ]
+  },
+  "libraries": {}
+}

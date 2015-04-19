@@ -1,22 +1,15 @@
 {
-  "version": "0.1-alpha-*",
-  "dependencies": 
-  {
-    "Microsoft.AspNet.Diagnostics": "",
-    "Microsoft.AspNet.Hosting": "",
-    "Microsoft.AspNet.Server.WebListener": "",  	/* Windows Only */
-    "Microsoft.AspNet.StaticFiles": "",
-    "Nowin.vNext": ""
-  },
-  "commands": 
-  {
-	"web": "Microsoft.AspNet.Hosting server=Microsoft.AspNet.Server.WebListener server.urls=http://localhost:5001", 
-	"web-nowin": "Microsoft.AspNet.Hosting --server Nowin.vNext", 
-	"web-firefly": "Microsoft.AspNet.Hosting --server Firefly"
-  },
-  "configurations": 
-  {
-    "net45": {},
-    "k10": {}
-  }
+    "dependencies": 
+    {
+    	/*
+        "Kestrel": "1.0.0-*",
+        "Microsoft.AspNet.WebSockets.Server": "1.0.0-*",
+        */
+        "Nowin.vNext": ""
+    },
+    "commands": 
+    {
+        "web-nowin": "Microsoft.AspNet.Hosting --server Nowin.vNext",
+        "web-kestrel": "Microsoft.AspNet.Hosting --server Kestrel"
+    }
 }
