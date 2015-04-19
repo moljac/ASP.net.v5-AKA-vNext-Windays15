@@ -1,7 +1,7 @@
 ﻿{
     "version": "0.1-alpha-*",
     "dependencies": {
-        "Microsoft.AspNet.Hosting": "0.1-*"
+        "Microsoft.AspNet.Hosting": ""
     },
     "configurations": {
         "k10": {

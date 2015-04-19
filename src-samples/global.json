@@ -1,0 +1,10 @@
+{
+  "sources": 
+  	[ 
+  		/*
+  		https://github.com/aspnet/XRE/blob/4645885ed5c6047ea5429d6c6bd0c920b11af679/src/Microsoft.Framework.Runtime/ProjectResolver.cs#L66
+  		*/
+  		"servers",
+  		"webapps-websites"
+  	]
+}

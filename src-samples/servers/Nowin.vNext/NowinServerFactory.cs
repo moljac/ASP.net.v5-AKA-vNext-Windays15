@@ -23,7 +23,7 @@ namespace Nowin.vNext
             // TODO: Parse config
             var builder = ServerBuilder.New()
                                        .SetAddress(IPAddress.Any)
-                                       .SetPort(8080)
+                                       .SetPort(8000)
                                        .SetOwinApp(HandleRequest);
  
             return new NowinServerInformation(builder);

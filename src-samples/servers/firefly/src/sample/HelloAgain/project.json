@@ -1,8 +1,8 @@
 ﻿{
     "dependencies": {
-        "Helios" : "0.1-*",
-        "Microsoft.AspNet.Server.WebListener" : "0.1-*",
-        "Firefly" : "0.1-*"
+        "Helios" : "",
+        "Microsoft.AspNet.Server.WebListener" : "",
+        "Firefly" : ""
     },
     "configurations" : {
         "net45" : { },

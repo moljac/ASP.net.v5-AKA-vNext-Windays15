@@ -1,13 +1,9 @@
 {
     "dependencies": 
     {
-    "Microsoft.AspNet.Diagnostics": "1.0.0-*",
-    "Microsoft.AspNet.Hosting": "1.0.0-*",
-    "Microsoft.AspNet.Server.WebListener": "1.0.0-*",
-    "Microsoft.AspNet.StaticFiles": "1.0.0-*",
-    
-    "Kestrel": "1.0.0-*",
-    "Nowin.vNext": "1.0.0-*",
+        "Microsoft.AspNet.WebSockets.Server": "1.0.0-*",
+        "Kestrel": "1.0.0-*",
+        "Nowin.vNext": "1.0.0-*"
     },
     "commands": 
     {
@@ -19,5 +15,5 @@
     	http://localhost:8001 
     	*/
         "web-kestrel": "Microsoft.AspNet.Hosting --server Kestrel --server.urls http://localhost:8001"
-    },
+    }
 }

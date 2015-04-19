@@ -15,6 +15,7 @@ ls -al $HOME/
 
 chmod 770 .dnx/dnvm/dnvm.sh
 .dnx/dnvm/dnvm.sh
+source .dnx/dnvm/dnvm.sh
 
 dnvm upgrade
 dnvm list
