@@ -8,8 +8,7 @@ sudo apt-get -y \
 		libtool \
 		automake \
 		gettext \
-		build-essential \
-		mono-devel \
+		build-essential
 			
 		
 		
@@ -25,7 +24,7 @@ rm -fr ./mono/
 # make EXTERNAL_MCS=/foo/bar/mcs EXTERNAL_RUNTIME=/somewhere/else/mono
 #-----------------------------------------------------------
 
-$PREFIX=/usr/local
+PREFIX=/usr/local
 git clone https://github.com/mono/mono.git
 cd mono
 ./autogen.sh --prefix=$PREFIX

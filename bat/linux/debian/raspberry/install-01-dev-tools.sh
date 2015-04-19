@@ -7,6 +7,10 @@
 
 sudo apt-get -y \
 	install \
+		autoconf \
+		automake \
+		gettext \
+		libtool \
 		build-essential
 	
 sudo apt-get -y \

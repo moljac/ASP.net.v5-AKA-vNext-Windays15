@@ -8,8 +8,7 @@ sudo apt-get -y \
 		libtool \
 		automake \
 		gettext \
-		build-essential \
-		mono-devel \
+		build-essential
 
 
 rm -fr ./mono/
