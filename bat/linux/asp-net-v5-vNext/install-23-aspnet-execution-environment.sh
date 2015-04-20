@@ -1,5 +1,11 @@
 #!/bin/bash
 
+
+kvm upgrade
+dnvm upgrade
+
+
+
 VERSION_MANAGERS=\
     kvm \
     dnvm 

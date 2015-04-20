@@ -16,7 +16,7 @@
 # Use the -m option to import the certificates into the machine store if required.
 
 SUDO=sudo
-CERTMGR=/usr/bin/certmgr
+CERTMGR=/usr/local/bin/certmgr
 
 echo 'y' | \
 	$SUDO \

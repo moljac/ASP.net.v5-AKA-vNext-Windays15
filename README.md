@@ -7,9 +7,9 @@ ASP.net.v5-AKA-vNext-Windays15
 ## Facts
 
 *	version			
+	*	master	v.1.0.0-beta3		
 	*	dev		v.1.0.0-beta5		
 		nuget feed: https://www.myget.org/F/aspnetvnext
-	*	master	v.1.0.0-beta3		
 *	requirements (minimal)		
 	*	Windows 7 / Windows Server 2008 R2		
 		netfx 4.5.1 for IIS hosting
@@ -24,11 +24,14 @@ ASP.net.v5-AKA-vNext-Windays15
 		*	brew (Homebrew formula)		
 		*	Xamarin Studio (Monodevelop)		
 		
-	
-runtime
+## Runtime ( mono = .net / netfx)
 
-	*	mono
-	*	CoreCLR		(near/far future)
+*	mono		
+	v > 3.4.1	
+	*	2015-04-20	
+		*	4.1.0 from source	
+		*	3.12.1 from package
+*	CoreCLR		(near/far future)
 	
 	
 	

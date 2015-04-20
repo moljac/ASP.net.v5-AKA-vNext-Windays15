@@ -1,9 +1,11 @@
 #!/bin/bash
 
+
 # ASP.net Version Manager
 #	optimistic
 #	dnvm
 curl \
+	-v \
     -sSL \
     https://raw.githubusercontent.com/aspnet/Home/dev/dnvminstall.sh \
     | \

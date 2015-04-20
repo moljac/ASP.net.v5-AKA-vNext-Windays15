@@ -3,7 +3,11 @@
 # ASP.net Version Manager
 #	stable[ish]
 #	kvm
+
+sudo apt-get install ca-certificates
+
 curl \
+	-k \
     -sSL \
     https://raw.githubusercontent.com/aspnet/Home/master/kvminstall.sh \
     | \
@@ -11,6 +15,19 @@ curl \
         && \
         source ~/.k/kvm/kvm.sh
 
+# curl: (60) SSL certificate problem: certificate is not yet valid
+
+wget \
+	--no-check-certificate \
+    https://raw.githubusercontent.com/aspnet/Home/master/kvminstall.sh \
+    | \
+        sh \
+        && \
+        source ~/.k/kvm/kvm.sh
+
+# ERROR: The certificate of `raw.githubusercontent.com' is not trusted.
+# The certificate has not yet been activated
+		
 ls -al $HOME/
 
 # $HOME/.k/kvm/kvm.sh
