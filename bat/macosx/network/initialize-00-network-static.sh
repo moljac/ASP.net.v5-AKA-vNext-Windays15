@@ -6,12 +6,6 @@ SUDO=sudo
 $SUDO \
 	networksetup -listallnetworkservices 
 
-$SUDO \
-	networksetup -setmanual SERVICE IP SUBNET ROUTER  
- 
-# by default the Wi-Fi connection will be called "Wi-Fi," 
-# use the following to set it to a classic private IP address:
-
 SERVICE=Wi-Fi 
 IP_ADDRESS=192.168.73.57
 NETWORK_MASK=255.255.0.0
@@ -24,6 +18,14 @@ $SUDO \
 		$IP_ADDRESS \
 		$NETWORK_MASK \
 		$ROUTER_GATEWAY  
+
+#$SUDO \
+#	networksetup \
+#	-setmanual SERVICE IP SUBNET ROUTER  
+ 
+# by default the Wi-Fi connection will be called "Wi-Fi," 
+# use the following to set it to a classic private IP address:
+
 
 # sudo \
 #	ifconfig en1 inet \
