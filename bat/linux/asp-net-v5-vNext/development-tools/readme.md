@@ -1,6 +1,12 @@
 # ASP.net v5 Development tools
 
 
+## OmniSharp
+
+[http://www.omnisharp.net/](http://www.omnisharp.net/)
+
+
+
 ## Editors
 
 @## Sublime Text 3
@@ -29,10 +35,14 @@
 ### Emacs
 
 
-### vi
+### vim
+
+	cd ~/.vim/bundle
+	git clone https://github.com/OmniSharp/omnisharp-vim.git
+	cd omnisharp-vim
+	git submodule update --init --recursive
+	cd server
+	xbuild
 
 
-## OmniSharp
-
-[http://www.omnisharp.net/](http://www.omnisharp.net/)
 
