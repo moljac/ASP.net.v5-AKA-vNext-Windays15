@@ -1,0 +1,8 @@
+{
+    "dependencies": 
+    {
+        "Nowin": "",
+        "Microsoft.AspNet.Hosting": "",
+        "Microsoft.AspNet.Owin": ""
+    }
+}

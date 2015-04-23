@@ -1,0 +1,260 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"S",
+				"String	String"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "using Microsoft.AspNet.Builder;\nusing Microsoft.AspNet.Routing;\nusing Microsoft.Framework.DependencyInjection;\n\nnamespace HelloMvc\n{\n    public class Startup\n    {\n        public void Configure(IApplicationBuilder app)\n        {\n            app.UseErrorPage();\n\n            app.UseServices(services =>\n            {\n                services.AddMvc();\n            });\n\n\n            /*\n            app.UseMvc\n            (\n                    routes =>\n                    {\n                        routes.MapRoute(\n                            name: \"default\",\n                            template: \"{controller}/{action}/{id?}\",\n                            defaults: new { controller = \"Home\", action = \"Index\" });\n                    }\n            );\n            */\n\n            //app.UseMvc();\n\n            app.UseWelcomePage();\n        }       \n    }\n}",
+			"file": "Startup.cs",
+			"file_size": 852,
+			"file_write_time": 130742638063082848,
+			"settings":
+			{
+				"buffer_size": 854,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 54.0,
+		"last_filter": "Package Control: k",
+		"selected_items":
+		[
+			[
+				"Package Control: k",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/moljac/Desktop/projects/ASP.net.v5-AKA-vNext-Windays15/src-samples/webapps-websites/21-ASP.net-Home-DevTools/OmniSharp/HelloMvc",
+		"/home/moljac/Desktop/projects/ASP.net.v5-AKA-vNext-Windays15/src-samples/webapps-websites/21-ASP.net-Home-DevTools/OmniSharp/HelloMvc/Models",
+		"/home/moljac/Desktop/projects/ASP.net.v5-AKA-vNext-Windays15/src-samples/webapps-websites/21-ASP.net-Home-DevTools/OmniSharp/HelloMvc/Views",
+		"/home/moljac/Desktop/projects/ASP.net.v5-AKA-vNext-Windays15/src-samples/webapps-websites/21-ASP.net-Home-DevTools/OmniSharp/HelloMvc/Views/Home",
+		"/home/moljac/Desktop/projects/ASP.net.v5-AKA-vNext-Windays15/src-samples/webapps-websites/21-ASP.net-Home-DevTools/OmniSharp/HelloMvc/Views/Shared"
+	],
+	"file_history":
+	[
+		"/home/moljac/Desktop/projects/ASP.net.v5-AKA-vNext-Windays15/src-samples/webapps-websites/21-ASP.net-Home-DevTools/OmniSharp/HelloMvc/Startup.cs",
+		"/home/moljac/Desktop/projects/ASP.net.v5-AKA-vNext-Windays15/src-samples/webapps-websites/21-ASP.net-Home-DevTools/OmniSharp/Nowin.vNext/NowinServerFactory.cs",
+		"/home/moljac/Desktop/projects/ASP.net.v5-AKA-vNext-Windays15/src-samples/webapps-websites/21-ASP.net-Home-DevTools/OmniSharp/HelloMvc/project.json",
+		"/home/moljac/Desktop/projects/ASP.net.v5-AKA-vNext-Windays15/src-samples/webapps-websites/21-ASP.net-Home-DevTools/OmniSharp/Nowin.vNext/project.json",
+		"/home/moljac/Desktop/projects/ASP.net.v5-AKA-vNext-Windays15/src-samples/webapps-websites/03-HelloMVC/project.json",
+		"/home/moljac/Desktop/projects/ASP.net.v5-AKA-vNext-Windays15/src-samples/webapps-websites/21-ASP.net-Home-DevTools/OmniSharp/HelloMvc/Models/User.cs",
+		"/home/moljac/Desktop/projects/ASP.net.v5-AKA-vNext-Windays15/src-samples/webapps-websites/21-ASP.net-Home-DevTools/OmniSharp/HelloMvc/HelloMvc/Startup.cs",
+		"/home/moljac/Desktop/projects/ASP.net.v5-AKA-vNext-Windays15/src-samples/webapps-websites/01-HelloWeb/project.json"
+	],
+	"find":
+	{
+		"height": 0.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "Startup.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 854,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								781,
+								781
+							]
+						],
+						"settings":
+						{
+							"oops":
+							{
+								"109,111": "'?' does not contain a definition for 'DependencyInjection'",
+								"214,217": "'IApplicationBuilder' is not a known identifier",
+								"23,30": "Unknown Resolver Error",
+								"257,260": "'IApplicationBuilder' does not contain a definition for 'UseErrorPage'",
+								"257,261": "'IApplicationBuilder' does not contain a definition for 'UseErrorPage'",
+								"274,277": "'IApplicationBuilder' does not contain a definition for 'UseServices'",
+								"290,298": "'IApplicationBuilder' does not contain a definition for 'UseServices'",
+								"30,32": "'?' does not contain a definition for 'Builder'",
+								"347,350": "'?' does not contain a definition for 'AddMvc'",
+								"347,351": "'?' does not contain a definition for 'AddMvc'",
+								"55,62": "Unknown Resolver Error",
+								"62,64": "'?' does not contain a definition for 'Routing'",
+								"826,829": "'IApplicationBuilder' does not contain a definition for 'UseWelcomePage'",
+								"826,830": "'IApplicationBuilder' does not contain a definition for 'UseWelcomePage'",
+								"90,109": "Unknown Resolver Error"
+							},
+							"syntax": "Packages/C#/C#.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 205.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 249.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.variable_get":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/Kulture/ASP.NET.sublime-build",
+	"project": "HelloMvc.sublime-project",
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
