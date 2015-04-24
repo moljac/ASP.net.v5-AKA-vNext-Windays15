@@ -2,14 +2,18 @@
 # Batch scripts for preparing ASP.net v5 
 
 
-## http://weblogs.asp.net/imranbaloch/k-kvm-kpm-klr-kre-in-asp-net-vnext
-## http://blog.jsinh.in/hosting-asp-net-5-web-application-on-linux/#.VTTbPteSzhc
+## References
+
+*	[http://weblogs.asp.net/imranbaloch/k-kvm-kpm-klr-kre-in-asp-net-vnext](http://weblogs.asp.net/imranbaloch/k-kvm-kpm-klr-kre-in-asp-net-vnext)
+*	[http://blog.jsinh.in/hosting-asp-net-5-web-application-on-linux/#.VTTbPteSzhc](http://blog.jsinh.in/hosting-asp-net-5-web-application-on-linux/#.VTTbPteSzhc)
+*	
 
 
-kvm list
-k --version
 
-cd $HOME/ASP.net.v5-AKA-vNext-Windays15/src-samples/webapps-websites/01-HelloWeb/
+	kvm list
+	k --version
+
+	cd $HOME/ASP.net.v5-AKA-vNext-Windays15/src-samples/webapps-websites/01-HelloWeb/
 
 	kpm restore
 
