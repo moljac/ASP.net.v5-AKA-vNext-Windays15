@@ -21,18 +21,38 @@ CERTMGR=/usr/local/bin/certmgr
 echo 'y' | \
 	$SUDO \
 	$CERTMGR -ssl -m https://go.microsoft.com
+yes  | \
+	$SUDO \
+	$CERTMGR -ssl https://go.microsoft.com
+	
 echo 'y' | \
 	$SUDO \
 	$CERTMGR -ssl -m https://nuget.org
+yes  | \
+	$SUDO \
+	$CERTMGR -ssl https://nuget.org
+	
 echo 'y' | \
 	$SUDO \
 	$CERTMGR -ssl -m https://nugetgallery.blob.core.windows.net
+yes  | \
+	$SUDO \
+	$CERTMGR -ssl https://nugetgallery.blob.core.windows.net
+
 echo 'y' | \
 	$SUDO \
 	$CERTMGR -ssl -m https://www.myget.org
+yes  | \
+	$SUDO \
+	$CERTMGR -ssl https://www.myget.org
+
 echo 'y' | \
 	$SUDO \
 	$CERTMGR -ssl -m https://www.myget.org/F/aspnetvnext/
+yes  | \
+	$SUDO \
+	$CERTMGR -ssl https://www.myget.org/F/aspnetvnext/
+
 
 	
 # user
