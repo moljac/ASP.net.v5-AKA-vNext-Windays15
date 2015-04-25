@@ -21,4 +21,16 @@ sudo apt-get -y \
 		gcc-4.6-base cpp-4.6 \
 		libc6-dev \
 		libgomp1 libquadmath0 \
+
+
+# glibc problems with certificates	
+ldd --version    
+sudo \
+	dpkg -l | grep libc6
+
+sudo \
+	apt-get update
+sudo \
+	apt-get dist-upgrade
+	
 	
