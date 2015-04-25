@@ -37,11 +37,9 @@ echo 'y' | \
 	
 # user
 sudo mozroots --import --sync 
-sudo mozroots --import --ask-remove
+# sudo mozroots --import --ask-remove
 
 # machine
-sudo mozroots --import --sync \
-	--machine
-sudo mozroots --import --ask-remove \
-	--machine
+sudo mozroots --import --sync --machine
+# sudo mozroots --import --ask-remove --machine
 	
