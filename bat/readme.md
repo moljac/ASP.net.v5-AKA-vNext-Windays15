@@ -18,7 +18,7 @@
 	kpm restore
 
 	ifconfig ; export KRE_TRACE=1 ; k web-nowin
-	# http://192.168.66.29:8000/
+	\# http://192.168.66.29:8000/
 	
 	ifconfig ; export KRE_TRACE=1 ; k web-kestrel
 
