@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# start usb0 for android tethering
+# TODO: check if turning on tethering on Android
+# 		starts usb0 automatically
+
+sudo ifup usb0
+
