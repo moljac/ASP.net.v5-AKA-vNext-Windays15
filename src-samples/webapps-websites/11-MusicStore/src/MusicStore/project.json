@@ -32,13 +32,20 @@
 		"Microsoft.Framework.Cache.Memory": "1.0.0-beta3",
 		"Microsoft.Framework.CodeGenerators.Mvc": "1.0.0-beta3",
 		"Microsoft.Framework.ConfigurationModel.Json": "1.0.0-beta3",
-		"Microsoft.Framework.Logging.Console": "1.0.0-beta3"
+		"Microsoft.Framework.Logging.Console": "1.0.0-beta3",
+		
+        "Nowin.vNext": ""
 	},
 	"commands": {
 		"gen": "Microsoft.Framework.CodeGeneration",
 		"kestrel": "Microsoft.AspNet.Hosting --server Kestrel --server.urls http://localhost:5004",
 		"run": "run server.urls=http://localhost:5003",
-		"web": "Microsoft.AspNet.Hosting --server Microsoft.AspNet.Server.WebListener --server.urls http://localhost:5002"
+		"web": "Microsoft.AspNet.Hosting --server Microsoft.AspNet.Server.WebListener --server.urls http://localhost:5002",
+		
+        /* 
+        http://localhost:8000 
+        */
+        "web-nowin": "Microsoft.AspNet.Hosting --server Nowin.vNext",
 	},
 	"frameworks": {
 		"aspnet50": { },

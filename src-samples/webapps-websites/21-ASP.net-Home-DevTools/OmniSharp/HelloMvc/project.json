@@ -7,7 +7,7 @@
         "Microsoft.AspNet.Mvc": "6.0.0-beta3",
         "Microsoft.AspNet.Server.WebListener": "1.0.0-beta3",
         /* servers */
-        "Nowin.vNext": "1.0.0-*",
+        "Nowin.vNext": "",
         "Kestrel": "1.0.0-*"
     },
     "commands": 
