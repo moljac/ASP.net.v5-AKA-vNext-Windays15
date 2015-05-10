@@ -39,32 +39,39 @@ sudo \
 			autoconf \
 			libtool \
 			automake \
-			gettext \
+			gettext 
+		
+#===============================================================================
+# http://www.mono-project.com/docs/getting-started/install/linux/		
+#
+# 
+# package names:
+#	mono-devel 
+#		to compile code.
+#
+# 	mono-complete 
+#		to install everything
+#		this should cover most cases of “assembly not found” errors.
+#
+# 	referenceassemblies-pcl 
+#		for PCL compilation support
+#		this will resolve most cases of “Framework not installed: .NETPortable” 
+#		errors during software compilation.
+#
+#	ca-certificates-mono 
+#		to get SSL certificates for HTTPS connections
+#		if ran into trouble making HTTPS connections.
+
+sudo \
+	apt-get -y \
+		install \
 			mono-devel \
 			mono-complete \
-			monodevelop-current
+			referenceassemblies-pcl \
+			
 
 mono -V
 		
 		
-
-# ppa:keks9n/monodevelop-latest 
-# seems to be outdated.
-
-# to use the latest version ( 4.2.2+ ) with the latest runtime and so on, 
-# use this new ppa:
-
-# sudo add-apt-repository ppa:ermshiperete/monodevelop
-# sudo apt-get -y\
-#	update
-# sudo apt-get -y \
-#	install \
-#	monodevelop-current
-
-# mono -V
-
-# After this you will have monodevelop installed in the /opt/monodevelop. 
-# To start the IDE use the following script:
-
 
 
