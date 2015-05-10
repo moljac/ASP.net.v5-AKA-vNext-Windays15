@@ -1,0 +1,30 @@
+#!/bin/bash
+
+sudo yum install -y git wget curl
+sudo vi /etc/yum.repos.d/fedora-updates.repo 
+sudo yum install -y git wget curl
+git clone https://github.com/moljac/ASP.net.v5-AKA-vNext-Windays15.git
+
+
+# nautilus
+touch ~/Templates/NewFile
+
+
+sudo rpm --import \
+	"http://keyserver.ubuntu.com/pks/lookup?op=get&search=0x3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF"
+sudo yum-config-manager \
+	--add-repo http://download.mono-project.com/repo/centos/
+
+
+sudo yum -y \
+	update
+
+sudo \
+	yum -y \
+		install \
+			mono-devel \
+			mono-complete \
+			referenceassemblies-pcl \
+
+mono -V
+

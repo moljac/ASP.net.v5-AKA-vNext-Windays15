@@ -14,12 +14,27 @@ sudo \
 			mono-devel \
 			monodevelop-current
 
-mono -v
+mono -V
 
+sudo \
+	apt-get -y \
+		install \
+			autoconf \
+			libtool \
+			automake \
+			gettext 
+
+		
+#===============================================================================
+# http://www.mono-project.com/docs/getting-started/install/linux/		
+#
+#
 # NOTE: needed for newest mono!!
-sudo apt-key adv \
-	--keyserver keyserver.ubuntu.com \
-	--recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
+
+sudo \
+	apt-key adv \
+		--keyserver keyserver.ubuntu.com \
+		--recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
 	
 echo "deb http://download.mono-project.com/repo/debian wheezy main" \
 	| \
@@ -33,17 +48,7 @@ echo "deb http://download.mono-project.com/repo/debian wheezy-apache24-compat ma
 	| \
 	sudo tee -a /etc/apt/sources.list.d/mono-xamarin.list
 
-sudo \
-	apt-get -y \
-		install \
-			autoconf \
-			libtool \
-			automake \
-			gettext 
-		
-#===============================================================================
-# http://www.mono-project.com/docs/getting-started/install/linux/		
-#
+
 # 
 # package names:
 #	mono-devel 
