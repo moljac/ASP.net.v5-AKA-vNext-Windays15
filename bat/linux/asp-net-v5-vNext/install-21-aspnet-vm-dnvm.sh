@@ -27,6 +27,7 @@ DNVM=$HOME/.dnx/dnvm/dnvm.sh
 if [[ -x "$DNVM" ]]
 then
 	echo "File '$DNVM' is executable"
+	dnvm list
 	dnvm upgrade
 	dnvm list
 else
