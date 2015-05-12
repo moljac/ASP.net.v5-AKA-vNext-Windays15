@@ -1,5 +1,6 @@
 #!/bin/bash
 
+
 # http://www.mono-project.com/docs/faq/security/
 #
 # import the root certificates using the mozroots tool:
@@ -18,48 +19,58 @@
 SUDO=sudo
 CERTMGR=/usr/local/bin/certmgr
 
-echo 'y' | \
-	$SUDO \
-	$CERTMGR -ssl -m https://go.microsoft.com
-yes  | \
-	$SUDO \
-	$CERTMGR -ssl https://go.microsoft.com
+certmgr_certificates()
+{
+	echo 'y' | \
+		$SUDO \
+		$CERTMGR -ssl -m https://go.microsoft.com
+	yes  | \
+		$SUDO \
+		$CERTMGR -ssl https://go.microsoft.com
 	
-echo 'y' | \
-	$SUDO \
-	$CERTMGR -ssl -m https://nuget.org
-yes  | \
-	$SUDO \
-	$CERTMGR -ssl https://nuget.org
+	echo 'y' | \
+		$SUDO \
+		$CERTMGR -ssl -m https://nuget.org
+	yes  | \
+		$SUDO \
+		$CERTMGR -ssl https://nuget.org
 	
-echo 'y' | \
-	$SUDO \
-	$CERTMGR -ssl -m https://nugetgallery.blob.core.windows.net
-yes  | \
-	$SUDO \
-	$CERTMGR -ssl https://nugetgallery.blob.core.windows.net
+	echo 'y' | \
+		$SUDO \
+		$CERTMGR -ssl -m https://nugetgallery.blob.core.windows.net
+	yes  | \
+		$SUDO \
+		$CERTMGR -ssl https://nugetgallery.blob.core.windows.net
 
-echo 'y' | \
-	$SUDO \
-	$CERTMGR -ssl -m https://www.myget.org
-yes  | \
-	$SUDO \
-	$CERTMGR -ssl https://www.myget.org
+	echo 'y' | \
+		$SUDO \
+		$CERTMGR -ssl -m https://www.myget.org
+	yes  | \
+		$SUDO \
+		$CERTMGR -ssl https://www.myget.org
 
-echo 'y' | \
-	$SUDO \
-	$CERTMGR -ssl -m https://www.myget.org/F/aspnetvnext/
-yes  | \
-	$SUDO \
-	$CERTMGR -ssl https://www.myget.org/F/aspnetvnext/
+	echo 'y' | \
+		$SUDO \
+		$CERTMGR -ssl -m https://www.myget.org/F/aspnetvnext/
+	yes  | \
+		$SUDO \
+		$CERTMGR -ssl https://www.myget.org/F/aspnetvnext/
+}
 
-
+mozroots()
+{
 	
-# user
-sudo mozroots --import --sync 
-# sudo mozroots --import --ask-remove
+	# user
+	sudo mozroots --import --sync 
+	# sudo mozroots --import --ask-remove
 
-# machine
-sudo mozroots --import --sync --machine
-# sudo mozroots --import --ask-remove --machine
-	
+	# machine
+	sudo mozroots --import --sync --machine
+	# sudo mozroots --import --ask-remove --machine
+}
+
+
+certmgr_certificates
+mozroots
+
+
