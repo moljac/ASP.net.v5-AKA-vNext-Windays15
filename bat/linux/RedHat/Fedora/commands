@@ -26,5 +26,7 @@ sudo \
 			mono-complete \
 			referenceassemblies-pcl \
 
-mono -V
+mono -V 
+mono -V > mono-version.md
+
 

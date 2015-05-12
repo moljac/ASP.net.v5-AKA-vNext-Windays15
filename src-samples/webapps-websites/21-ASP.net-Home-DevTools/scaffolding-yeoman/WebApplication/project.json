@@ -20,7 +20,6 @@
         "EntityFramework.SqlServer": "7.0.0-beta3",
         "EntityFramework.Commands": "7.0.0-beta3",
         "EntityFramework.InMemory": "7.0.0-beta3",
-        "Microsoft.AspNet.SignalR.Common": "3.0.0-beta4",
         "Microsoft.AspNet.SignalR.Server": "3.0.0-beta4",
         /*
         --------------------------------------------------------------

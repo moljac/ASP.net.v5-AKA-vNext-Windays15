@@ -1,13 +1,15 @@
-#!/bin/bash
+
 
 SUDO=sudo
 
 #-------------------------------------------
 # npm (nodejs package manager)
 $SUDO \
-	apt-get -y \
+	yum -y \
 		install \
+		npm \
 		nodejs-legacy
+
 
 #-------------------------------------------
 # grunt
@@ -24,5 +26,3 @@ $SUDO \
 $SUDO \
 	npm install -g \
 		yo generator-aspnet
-
-
