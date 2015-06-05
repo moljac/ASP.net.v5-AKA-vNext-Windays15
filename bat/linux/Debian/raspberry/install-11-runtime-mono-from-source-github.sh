@@ -10,7 +10,7 @@ sudo apt-get -y \
 		gettext \
 		build-essential
 			
-		
+cd /tmp		
 		
 rm -fr ./mono/
 	
