@@ -7,6 +7,7 @@
 
 sudo apt-get -y \
 	install \
+		git \
 		autoconf \
 		automake \
 		gettext \
@@ -18,9 +19,11 @@ sudo apt-get -y \
 	
 sudo apt-get -y \
 	install \
-		gcc-4.6-base cpp-4.6 \
+		gcc-4.6-base \
+		cpp-4.6 \
 		libc6-dev \
-		libgomp1 libquadmath0 \
+		libgomp1 \
+		libquadmath0
 
 
 # glibc problems with certificates	

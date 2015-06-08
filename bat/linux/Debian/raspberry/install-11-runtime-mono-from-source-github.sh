@@ -1,19 +1,26 @@
 #!/bin/bash
 
-		
-sudo apt-get -y \
-	install \
-		git \
-		autoconf \
-		libtool \
-		automake \
-		gettext \
-		build-essential
-			
+. ./install-01-dev-tools.sh
+					
 cd /tmp		
 		
-rm -fr ./mono/
-	
+rm -fr \
+	./mono/ \
+	./mono-master/ \
+	mono-master.zip
+
+download_git_repo()
+{
+	git clone https://github.com/mono/mono.git
+}
+
+download_zip()
+{
+	wget https://github.com/mono/mono/archive/master.zip
+	unzip master.zip mono
+}	
+
+
 #=======================================================================================
 # In order to use mcs and mono binaries during the build process which do not 
 # reside in your PATH, you can set two make variables, 
@@ -25,7 +32,10 @@ rm -fr ./mono/
 #-----------------------------------------------------------
 
 PREFIX=/usr/local
-git clone https://github.com/mono/mono.git
+
+download_git_repo
+#download_zip
+
 cd mono
 ./autogen.sh --prefix=$PREFIX
 
