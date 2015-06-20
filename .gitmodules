@@ -16,3 +16,6 @@
 [submodule "OmniSharp/OmniSharp-Server"]
 	path = OmniSharp/OmniSharp-Server
 	url = https://github.com/OmniSharp/omnisharp-server.git
+[submodule "bat"]
+	path = bat
+	url = https://github.com/moljac/bat-ASPnet-v5-AKA-vNext.git
